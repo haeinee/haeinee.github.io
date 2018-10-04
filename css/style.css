@@ -553,8 +553,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: .5px;
   }
 
   .top-line {
