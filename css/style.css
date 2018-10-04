@@ -549,6 +549,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 27px;
   line-height: 40px;
   letter-spacing: 1px;
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
