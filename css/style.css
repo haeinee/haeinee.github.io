@@ -409,7 +409,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
   #fh5co-author,
-  #fh5co-work,
+  #fh5co-work-1,
+  #fh5co-work-2,
   #fh5co-about,
   #fh5co-contact {
     padding: 2em 0;
