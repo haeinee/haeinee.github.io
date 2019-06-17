@@ -387,7 +387,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-author,
-#fh5co-work,
 #fh5co-about,
 #fh5co-contact
 {
@@ -395,9 +394,13 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
 }
 
-  #fh5co-footer {
-    padding: 2.1em 0 1em 0;
-  }
+#fh5co-work {
+  padding: 2em 0;
+}
+
+#fh5co-footer {
+  padding: 2.1em 0 1em 0;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -520,7 +523,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .top-line {
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 .top-line .fh5co-heading {
@@ -1182,6 +1185,10 @@ blockquote .person cite {
   list-style: none;
   padding: 0;
   margin: 0 0 5px 0;
+}
+
+.portfolio-type {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
