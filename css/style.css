@@ -1,3 +1,5 @@
+/*Fonts*/
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -5,6 +7,42 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*Poppins*/
+
+@font-face {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/poppins/Poppins-Medium.ttf?srf3rx") format("truetype");
+}
+
+/*SanFranciscoDisplay*/
+
+@font-face {
+  font-family: 'sanfrancisco display';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/san-francisco-display/SanFranciscoDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sanfrancisco display';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/san-francisco-display/SanFranciscoDisplay-Bold.otf") format("opentype");
+}
+
+/*Signerica*/
+
+@font-face {
+  font-family: 'signerica';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/signerica/Signerica_Fat.ttf?srf3rx") format("truetype");
+}
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -24,7 +62,6 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  padding-top: 6em !important;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -86,13 +123,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 25px 0;
-  z-index: 1;
-  background: #edebe8;
+  background: #fafafa;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -109,12 +141,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav #fh5co-logo {
-  font-size: 20px;
+  font-size: 32px;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'signerica';
   letter-spacing: .1rem;
 }
 .fh5co-nav .fh5co-social {
@@ -139,7 +169,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .fh5co-nav #fh5co-logo {
-    font-size: 15px;
+    font-size: 22px;
   }
 
 }
@@ -276,6 +306,36 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 
+.portfolio-col {
+  margin-bottom: 30px;
+}
+
+.portfolio-info h3 {
+  margin-bottom: 12px;
+  font-family: 'poppins';
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 1.67px;
+  text-transform: uppercase;
+}
+
+.portfolio-info p {
+  color: #000;
+  font-family: 'sanfrancisco display';
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-info {
+    margin-bottom: 34px;
+  }
+
+  .portfolio-info p {
+    font-size: 16px;
+  }
+}
+
 .about-content {
   margin-bottom: 7em;
 }
@@ -383,7 +443,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-bg-section {
-  background: rgba(0, 0, 0, 0.05);
+  background: #fafafa;
 }
 
 #fh5co-author,
@@ -396,14 +456,62 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-work-1 {
   padding: 6em 0 1.2em;
+  background: #fafafa;
 }
 
 #fh5co-work-2 {
   padding: 1.2em 0 6em;
 }
 
+.portfolio-author h2 {
+  font-family: 'poppins';
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.67px;
+}
+
+.portfolio-author p {
+  color: #000;
+  font-family: 'sanfrancisco display';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.portfolio-author a {
+  color: #000;
+  font-family: 'poppins';
+  font-size: 16px;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+} 
+
+.copyright p {
+  color: #9b9b9b;
+  font-family: 'sanfrancisco display';
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-author h2 {
+    font-size: 24px;
+  }
+
+  .portfolio-author p {
+    font-size: 16px;
+  }
+
+  .portfolio-author a {
+    font-size: 14px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+}
+
 #fh5co-footer {
   padding: 2.1em 0 1em 0;
+  background: #fff;
 }
 
 
@@ -477,7 +585,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
+  height: 400px;
   margin-bottom: 20px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -533,7 +641,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .top-line {
-  padding-bottom: 4em;
+  padding-bottom: 7em;
 }
 
 .top-line .fh5co-heading {
@@ -559,15 +667,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .intro h2 {
-  font-size: 27px;
-  line-height: 40px;
+  font-family: 'sanfrancisco display';
+  font-size: 45px;
+  line-height: 60px;
   letter-spacing: 1px;
-  text-align: right;
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
     text-align: left;
     letter-spacing: .5px;
   }
@@ -698,9 +806,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #cabcab !important;
 }
 
-#fh5co-footer {
-  background: #cabcab;
-}
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
   margin: 0;
@@ -732,12 +837,6 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-#fh5co-footer .copyright p {
-  font-size: 13px;
-  color: #ffffff;
-  vertical-align: middle;
-}
-
 
 
 #fh5co-offcanvas {
