@@ -336,6 +336,54 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+.portfolio-page-title {
+  margin-bottom: 40px;
+}
+
+.portfolio-page-title h1 {
+  margin-bottom: 0;
+  font-family: 'poppins';
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.portfolio-description img {
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.portfolio-main-img {
+  margin-bottom: 80px;
+}
+
+.portfolio-section {
+  color: #000;
+}
+
+.portfolio-section p {
+  font-family: 'sanfrancisco display';
+  font-size: 20px;
+}
+
+.portfolio-section .portfolio-section-title p {
+  font-family: 'poppins';
+  font-size: 22px;
+  letter-spacing: 1.67px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+  .portfolio-section p {
+    font-size: 16px;
+  }
+
+  .portfolio-section .portfolio-section-title p {
+    font-size: 18px;
+  }
+}
+
 .about-content {
   margin-bottom: 7em;
 }
@@ -450,6 +498,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about,
 #fh5co-contact
 {
+  background: #fafafa;
   padding: 6em 0;
   clear: both;
 }
@@ -674,8 +723,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 34px;
     text-align: left;
     letter-spacing: .5px;
   }
